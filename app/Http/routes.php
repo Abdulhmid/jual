@@ -11,6 +11,18 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
+// get('/dashboard', 'BackendController@index');
+Route::group(["middleware" => "auth"], function (){
+	
+	Route::get('/dashboard', 'BackendController@index');
+    Route::controllers([
+         '/manage-admin'         => 'BackendController'
+    ]);
 });
+
+Route::controllers([
+    'auth'      => 'Auth\AuthController',
+    'password'  => 'Auth\PasswordController',
+]);
+
+Route::controller('/', 'FrontendController');

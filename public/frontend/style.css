@@ -31,10 +31,14 @@ body { font-family:Arial, Helvetica, sans-serif; }
 
 
 .header-area {
-    background: none repeat scroll 0 0 #f4f4f4;
+    /*background: none repeat scroll 0 0 #f4f4f4;*/
+    /* Change To */
+    background: none repeat scroll 0 0 rgba(13, 22, 80, 0.94);
 }
 .header-area a {
-    color: #888;
+    /*color: #888;*/
+    /* Change To */
+    color : #FFF;
 }
 .user-menu ul {
     list-style: outside none none;
@@ -147,7 +151,7 @@ z-index: 999;}
     padding: 20px;
 }
 
-.mainmenu-area ul.navbar-nav li:hover a, .mainmenu-area ul.navbar-nav li.active a {background: #5a88ca; color:#FFF;}
+.mainmenu-area ul.navbar-nav li:hover a, .mainmenu-area ul.navbar-nav li.active a {background: #0C3167;; color:#FFF;}
 .mainmenu-area .nav > li > a:focus {color: #FFF;}
 
 .slider-area { width:80%; position:relative; margin:0 auto; padding:5px;}
